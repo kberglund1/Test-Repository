@@ -1,0 +1,53 @@
+\documentclass{ximera}
+
+\title{Even Roots}
+\author{Kenneth Berglund}
+\begin{document}
+\begin{abstract}
+Discusses how when there is a negative underneath an even root, the function is undefined. 
+\end{abstract}
+\maketitle
+
+\section{Even Roots}
+If your function has a variable underneath an even root (a square root, fourth root, sixth root, etc.) \textbf{you risk having a negative number underneath the square root}, which would make your function undefined. Your task is to find out which values of $x$ make the radicand (the expression underneath the square root) non-negative. The domain will be those values.
+
+\subsection{Why?}
+The function $f(x) = \sqrt{x}$ has domain $x \ge 0$, so any expression with a negative underneath the square root is undefined. 
+
+\subsection{Example}
+The function $f(x) = \sqrt{1 - x}$ has domain $(-\infty, 1]$, since those values of $x$ make the radicand non-negative. To find this, we set $1 - x \ge 0$ and solved for $x$. 
+
+Note that in the graph below, we can visually see how the function only takes values when $x \le 1$. \link[Here]{https://www.desmos.com/calculator/m7k2scsnpa} is a link to the Desmos graph. 
+\begin{center}
+\desmos{m7k2scsnpa}{800}{600}
+\end{center}
+
+Feel free to check your solutions using Desmos to see where the function is defined. We also provide solutions. \textbf{Please try each problem before looking at the solutions, and only resort to the solution when you get stuck.} 
+
+\subsection{More Examples}
+Find the domain of $f$ for:
+
+\begin{enumerate}
+	\item$f(x) = \sqrt{x - 2}$
+	\item $f(x) = \frac{\sqrt{x - 3}}{5}$
+	\item $f(x) = \sqrt[4]{x + 3}$
+	\item $f(x) = 3\sqrt{x - 7}$
+	\item $f(x) = \sqrt{2|x| + 3}$
+\end{enumerate}
+
+\begin{explanation}
+\begin{enumerate}
+	\item We set the radicand greater than or equal to zero: $x - 2 \ge 0$. Solving this, we get $x \ge 2$, which is our domain. In interval notation, this is $[2, \infty)$. 
+
+	\item We can ignore the denominator here, since there is no variable in the denominator. We set the radicand greater than or equal to zero: $x - 3 \ge 0$. Solving this, we get $x \ge 3$, which is our domain. In interval notation, this is $[3, \infty)$. 
+	\item Note that \textbf{any} even root can cause a function to be undefined at points. We set the radicand greater than or equal to zero: $x + 3 \ge 0$. Solving this, we get $x \ge -3$, which is our domain. In interval notation, this is $[-3, \infty)$.  
+
+	\item The coefficient in front of the radical does not affect the domain. We set the radicand greater than or equal to zero: $x -7 \ge 0$. Solving this, we get $x \ge 7$, which is our domain. In interval notation, this is $[7, \infty)$. 
+
+	\item We set the radicand greater than or equal to zero: $2|x| - 3 \ge 0$.
+
+To solve this, we first isolate the absolute value: $|x| \ge \frac{3}{2}$. This tells us $x \ge \frac{3}{2}$ or $x \le -\frac{3}{2}$ (review how to solve absolute value inequalities if you need to). In interval notation, our domain is $\left(-\infty, -\frac{3}{2}\right) \cup \left(\frac{3}{2}, \infty\right)$.
+\end{enumerate}
+\end{explanation}
+
+\end{document}

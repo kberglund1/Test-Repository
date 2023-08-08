@@ -1,0 +1,54 @@
+\documentclass{ximera}
+
+\title{ Logarithms}
+\author{Kenneth Berglund}
+\begin{document}
+\begin{abstract}
+Discusses how when there is a negative or zero inside a logarithm, the function is undefined. 
+\end{abstract}
+\maketitle
+
+\section{Logarithms}
+You might not have encountered logarithms yet in your course, so if you haven’t, feel free to skip this section until you get to them.
+
+The domain of $\log_b(x)$ (for any base $b$) is all positive real numbers. If your function has a variable inside a logarithm function, \textbf{you risk having a non-positive number inside the logarithm}, which would make your function undefined. Your task is to find out which values of $x$ make the input to the logarithm positive. The domain will be those values.
+
+\textbf{Be careful! The base of the logarithm does not matter when calculating the domain.}
+
+\subsection{Why?}
+The function $f(x) = \log_b(x)$ has domain $x > 0$, so any expression with a non-positive number inside the logarithm is undefined. 
+
+\subsection{Example}
+The function $f(x) = \ln(x - 1)$ has domain $(1, \infty)$, since those values of $x$ make the input to the log positive. To find this, we set $x - 1 > 0$ and solved for $x$.
+
+In the below graph, we can see that the function is not defined for $x \le 1$. \link[Here]{https://www.desmos.com/calculator/ym6ox91gda} is a link to the Desmos graph. 
+\begin{center}
+\desmos{ym6ox91gda}{800}{600}
+\end{center}
+
+Feel free to check your solutions using Desmos to see where the function is defined. We also provide solutions. \textbf{Please try each problem before looking at the solutions, and only resort to the solution when you get stuck.} 
+
+\subsection{More Examples}
+Find the domain of $f$ for:
+
+\begin{enumerate}
+	\item $f(x) = \log(x - 3)$
+	\item $f(x) = \ln(2|x| + 1)$
+	\item $f(x) = \ln(77 - x)$
+	\item $f(x) = \log(4x + 6)$
+\end{enumerate}
+
+\begin{explanation}
+\begin{enumerate}
+	\item We set the input to the logarithm greater than zero: $x - 3 > 0$. Solving this, we get $x > 3$, which is our domain. In interval notation, this is $(3, \infty)$. 
+
+	\item We set the input to the logarithm greater than zero: $2|x| + 1 \ge 0$.
+
+To solve this, we first isolate the absolute value: $|x| \ge -\frac{1}{2}$. This is always true, since an absolute value measures distance, which is never negative. Therefore, our domain is all real numbers, or in interval notation $(-\infty, \infty)$.
+	\item We set the input to the logarithm greater than zero: $77-x> 0$. Solving this, we get $x < 77$, which is our domain. In interval notation, this is $(-\infty, 77)$.   
+
+	\item We set the input to the logarithm greater than zero: $4x + 6> 0$. Solving this, we get $x > -\frac{3}{2}$, which is our domain. In interval notation, this is $\left(-\frac{3}{2}, \infty\right)$. 
+\end{enumerate}
+\end{explanation}
+
+\end{document}

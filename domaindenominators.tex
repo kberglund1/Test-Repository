@@ -1,0 +1,73 @@
+\documentclass{ximera}
+
+\title{Denominators}
+\author{Kenneth Berglund}
+\begin{document}
+\begin{abstract}
+Discusses how when the denominator is zero, the function is undefined. 
+\end{abstract}
+\maketitle
+
+\section{Denominators}
+If your function has a variable in the denominator, \textbf{you risk having a zero in the denominator}, which would make your function undefined. Your task is to find out which values of $x$ make the denominator zero. The domain will exclude those values.
+
+\subsection{Why?}
+The function $f(x) = 1/x$ has domain $x \ne 0$, so any expression with a zero in its denominator is undefined. 
+
+\subsection{Example}
+The function $f(x) = \frac{1}{x + 9}$ has domain $x \ne -9$, since $x + 9 = 0$ when $x = -9$. In interval notation, the domain is $(-\infty, -9) \cup (-9, \infty)$. Note that in the graph of the function below, we can see visually that the function is not defined at $x = -9$. \link[Here]{https://www.desmos.com/calculator/dgmizeqccv} is a link to the Desmos graph. 
+
+\begin{center}
+\desmos{dgmizeqccv}{800}{600}
+\end{center}
+
+Feel free to check your solutions using Desmos to see where the function is defined. We also provide solutions. \textbf{Please try each problem before looking at the solutions, and only resort to the solution when you get stuck.} 
+
+\subsection{More Examples}
+Find the domain of $f$ for:
+
+\begin{enumerate}
+	\item $f(x) = \frac{1}{(x + 3)(x - 5)}$
+	\item $f(x) = \frac{1}{x^2 - x - 6}$
+	\item $f(x) = \frac{12x}{|x| - 3}$
+	\item $f(x) = \frac{x - 2}{(x + 7)(x - 1)}$
+	\item $f(x) = \frac{x - 4}{x - 3}$
+\end{enumerate}
+
+\begin{explanation}
+\begin{enumerate}
+	\item We set the denominator equal to zero: $(x + 3)(x - 5) = 0$. 
+
+Since we are multiplying two factors to get 0, we can set each equal to zero independently and solve: 
+
+$$x + 3 = 0 \text{ and } x - 5 = 0$$
+
+This gives us $x = -3$ and $x = 5$. These are the values we exclude from the domain, so our domain is $x \ne -3$ and $x \ne 5$, or in interval notation, $(-\infty, -3) \cup (-3, 5) \cup (5, \infty)$. 
+
+	\item We set the denominator equal to zero: $x^2 - x - 6 = 0$. We can factor to obtain $(x - 3)(x + 2) = 0$. 
+
+Since we are multiplying two factors to get 0, we can set each equal to zero independently and solve: 
+
+$$x - 3 = 0 \text{ and } x + 2 = 0$$
+
+This gives us $x = 3$ and $x = -2$. These are the values we exclude from the domain, so our domain is $x \ne 3$ and $x \ne -2$, or in interval notation, $(-\infty, -2) \cup (-2, 3) \cup (3, \infty)$. 
+
+	\item We set the denominator equal to zero: $|x| - 3 = 0$.
+
+$|x| = -3$ when $x = -3$ and $x = 3$. These are the values we exclude from the domain, so our domain is $x \ne 3$ and $x \ne -3$, or in interval notation, $(-\infty, -3) \cup (-3, 3) \cup (3, \infty)$. 
+
+	\item We set the denominator equal to zero: $(x + 7)(x - 1) = 0$. Note that the numerator does not matter here. 
+
+Since we are multiplying two factors to get 0, we can set each equal to zero independently and solve: 
+
+$$x + 7 = 0 \text{ and } x - 1 = 0$$
+
+This gives us $x = -7$ and $x = 1$. These are the values we exclude from the domain, so our domain is $x \ne -7$ and $x \ne 1$, or in interval notation, $(-\infty, -7) \cup (-7, 1) \cup (1, \infty)$. 
+
+	\item We set the denominator equal to zero: $x - 3 = 0$. Note that the numerator does not matter here. 
+
+This gives us $x = 3$. This is the value we exclude from the domain, so our domain is $x \ne 3$, or in interval notation, $(-\infty, 3) \cup (3, \infty)$. 
+\end{enumerate}
+\end{explanation}
+
+\end{document}
