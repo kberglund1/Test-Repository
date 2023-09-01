@@ -1,0 +1,33 @@
+\documentclass{ximera}
+
+\title{Expandable and Foldable Environments}
+\author{Kenneth Berglund}
+\begin{document}
+\begin{abstract}
+Talks about the expandable and foldable environments. 
+\end{abstract}
+\maketitle
+
+\section{Definition}
+
+To use an expandable environment, go like this:
+\begin{expandable}
+Hello!
+\end{expandable}
+
+Likewise, you can have a foldable environment:
+\begin{foldable}
+Hello!
+\end{foldable}
+
+Weird things happen when you put align\* environments inside of expandable environments:
+
+\begin{expandable}
+This is a series of steps to simplify an equation:
+\begin{align*}
+2 + 2 & = x \\
+4 & = x
+\end{align*}
+\end{expandable}
+
+\end{document}
