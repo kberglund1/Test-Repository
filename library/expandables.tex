@@ -20,7 +20,7 @@ Likewise, you can have a foldable environment:
 Hello!
 \end{foldable}
 
-Weird things happen when you put align\* environments inside of expandable environments:
+Weird things happen when you put align* environments inside of expandable environments:
 
 \begin{expandable}
 This is a series of steps to simplify an equation:
@@ -29,5 +29,12 @@ This is a series of steps to simplify an equation:
 4 & = x
 \end{align*}
 \end{expandable}
+
+However, if you're not using align* environments, these look very nice contained in explanation environments as ways to hide solutions until students are ready to view them. 
+\begin{explanation}
+	\begin{expandable}
+		Here's some math: $2 + 2 = 4$. 
+	\end{expandable}
+\end{explanation}
 
 \end{document}
