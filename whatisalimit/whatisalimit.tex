@@ -45,7 +45,7 @@ Computational goals
 
 \includegraphics[width=0.5\textwidth]{graph1.png}
 \begin{question}  
-$\lim_{x to 3} f(x) = \answer{5}$  
+$\lim_{x \to 3} f(x) = \answer{5}$  
 
 % begin{exploration}
 \begin{explanation}
@@ -61,7 +61,7 @@ $\lim_{x to 3} f(x) = \answer{5}$
 \youtube{YTKoob7m3DM&t=36s}
 \end{center}
 
-The computation we just did plugged 3 into $f(x)$ and tells us $f(3)$. It does not necessarily tell us $lim_{x to 3} frac{x^2-1}{x-1}$.
+The computation we just did plugged 3 into $f(x)$ and tells us $f(3)$. It does not necessarily tell us $\lim_{x \to 3} \frac{x^2-1}{x-1}$.
 
 Since the limit is supposed to be telling us what the $y$-value is near when $x$ is near $3$, we can estimate this by plugging in numbers near $3$, such as
 \[
@@ -131,9 +131,9 @@ What would you like to do next
 
 We can extend these same concepts and definitions to the idea of a one-sided limit...
 
-$\lim_{x to a^+} f(x)$ means ``What value does $f(x)$ approach as $x$ approaches $a$ only from the right side''
+$\lim_{x \to a^+} f(x)$ means ``What value does $f(x)$ approach as $x$ approaches $a$ only from the right side''
 
-$\lim_{x to a^-} f(x)$ means ``What value does $f(x)$ approach as $x$ approaches $a$ only from the left side''
+$\lim_{x \to a^-} f(x)$ means ``What value does $f(x)$ approach as $x$ approaches $a$ only from the left side''
 
 \subsection{Lesson one-sided limits}
 
@@ -152,11 +152,11 @@ Take a few minutes to practice by evaluating the following (this is not graded; 
     \begin{expandable}
         Value $4$
     \end{expandable}
-    \item $\lim_{xto5^+} f(x)$
+    \item $\lim_{x \to 5^+} f(x)$
     \begin{foldable}
         Value $6$
     \end{foldable}
-    \item $\lim_{xto5^-} f(x)$
+    \item $\lim_{x \to 5^-} f(x)$
     \begin{expandable}
         Value $2$
     \end{expandable}
@@ -216,8 +216,8 @@ What is the limit of the pictured function as $x$ approaches $5$ (You have 2 att
 In order for the function $f(x)$ to be continuous at a point $x=a$, the following conditions must be met
 \begin{enumerate}
     \item $f(a)$ is defined
-    \item $\lim_{x to a} f(x)$ exists
-    \item $\lim_{x to a} f(x) = f(a)$ (the function value and limit are equal at $a$).
+    \item $\lim_{x \to a} f(x)$ exists
+    \item $\lim_{x \to a} f(x) = f(a)$ (the function value and limit are equal at $a$).
 \end{enumerate}
 
 \begin{explanation}
@@ -256,8 +256,8 @@ To summarize...
 \begin{explanation}
     \begin{foldable}
         \begin{itemize}
-            \item The function $f(x)$ is continuous from the left at point $a$ if $\lim_{x to a^-} f(x) = f(a)$
-            \item The function $f(x)$ is continuous from the right at point $a$ if $\lim_{x to a^+} f(x) = f(a)$
+            \item The function $f(x)$ is continuous from the left at point $a$ if $\lim_{x \to a^-} f(x) = f(a)$
+            \item The function $f(x)$ is continuous from the right at point $a$ if $\lim_{x \to a^+} f(x) = f(a)$
         \end{itemize}
         \begin{center}            
         \includegraphics[width=0.5\textwidth]{graph4.png}
@@ -269,7 +269,7 @@ To summarize...
     \end{foldable}
 
     \begin{foldable}
-        The function $f(x)$ is continuous on the closed interval $[a,b]$ if it is continuous on the open interval $(a,b)$ and if $lim_{x to a^+} f(x) = f(a)$ and $lim_{x to b^-} f(x) = f(b)$.
+        The function $f(x)$ is continuous on the closed interval $[a,b]$ if it is continuous on the open interval $(a,b)$ and if $lim_{x \to a^+} f(x) = f(a)$ and $lim_{x \to b^-} f(x) = f(b)$.
         In other words, $f(x)$ is continuous on the closed interval $[a,b]$ if it is continuous at all points of the interior $(a,b)$, left continuous at $x=b$, and right continuous at $x=a$.
     \end{foldable}{}
 \end{explanation}
@@ -297,14 +297,14 @@ Below is an example of a discontinuous graph.
         \item Identity function \[f(x)=x\]
         \item Power function \[f(x)=x^b\]
         \item Exponential function \[f(x)=b^x\]
-        \item Logarithmic function \[f(x)=log_b(x)\]
-        \item Sine and cosine \[f(x)=sin(x), \qquad f(x) = cos(x)\]
+        \item Logarithmic function \[f(x)=\log_b(x)\]
+        \item Sine and cosine \[f(x)=\sin(x), \qquad f(x) = \cos(x)\]
     \end{itemize}
 \end{theorem}
 
 We can now take limits of these functions without having to guess by evaluating them at nearby numbers. We know that for all values of $a$ in the domain of these functions, we can find the limit as $x$ approaches $a$ just by plugging $a$ into the function!
 \[
-    \lim_{x to a} f(x) = f(a)
+    \lim_{x \to a} f(x) = f(a)
 \]
 
 \subsection{Quiz}
@@ -312,13 +312,13 @@ We can now take limits of these functions without having to guess by evaluating 
 \begin{question}
 Use continuity to find this limit \[ \lim_{x \to \pi} sin(x) \]
 \begin{multipleChoice}  
-\choice[correct]{0, because $sin(\pi) = 0$.}
-\choice{0 because if we plug numbers near $pi$ like $3.1$, $3.14$, and $3.15$ into $sin(x)$, we get out very small values.}
+\choice[correct]{0, because $\sin(\pi) = 0$.}
+\choice{0 because if we plug numbers near $\pi$ like $3.1$, $3.14$, and $3.15$ into $\sin(x)$, we get out very small values.}
 \choice{We don't know how to find the exact value of this limit yet.}  
 \end{multipleChoice}  
 
 \begin{explanation}
-    That's right! Since we know that $sin(x)$ is continuous at $x = \pi$, we know that the limit as $x \to \pi$ is equal to what we get when we plug $\pi$ into $sin(x)$.
+    That's right! Since we know that $\sin(x)$ is continuous at $x = \pi$, we know that the limit as $x \to \pi$ is equal to what we get when we plug $\pi$ into $\sin(x)$.
 \end{explanation}
 \end{question}
 
