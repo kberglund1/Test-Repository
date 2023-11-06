@@ -1,0 +1,26 @@
+\documentclass{ximera}
+
+\title{What is a limit?}
+
+\newenvironment{objectives}{\begin{remark}\textbf{Objectives}\\}{\end{remark}}
+
+\begin{document}
+\begin{abstract}
+\end{abstract}
+
+\subsection{Quiz}
+
+\begin{question}
+Use continuity to find this limit: \[ \lim_{x \to \pi} \sin(x) \]
+\begin{multipleChoice}  
+\choice[correct]{0, because $\sin(\pi) = 0$.}
+\choice{0 because if we plug numbers near $\pi$ like $3.1$, $3.14$, and $3.15$ into $\sin(x)$, we get out very small values.}
+\choice{We don't know how to find the exact value of this limit yet.}  
+\end{multipleChoice}  
+
+\begin{explanation}
+    That's right! Since we know that $\sin(x)$ is continuous at $x = \pi$, we know that the limit as $x \to \pi$ is equal to what we get when we plug $\pi$ into $\sin(x)$.
+\end{explanation}
+\end{question}
+
+\end{document}
